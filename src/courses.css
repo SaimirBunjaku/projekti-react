@@ -1,0 +1,107 @@
+
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+.image-container img {
+  max-width: 100%; 
+  max-height: 100px; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+button.show-more-button,
+button.show-less-button {
+  margin-top: 10px;
+  padding: 16px 32px; 
+  background-color: #800080; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  border-radius: 8px; 
+  font-size: 18px; 
+}
+
+button.show-less-button {
+  padding: 12px 24px; 
+}
+
+button.show-more-button:hover,
+button.show-less-button:hover {
+  background-color: #4169e1; 
+}
+
+.header {
+  text-align: center;
+  color: white; 
+  width: 100%; 
+  padding: 20px 0; 
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.enroll-button,
+.favorites-button {
+  padding: 8px 16px;
+  margin: 0 10px;
+  background-color: #800080; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.favorites-button {
+  background-color: #4169e1;
+}
+
+.enroll-button:hover,
+.favorites-button:hover {
+  background-color: #6a0dad; 
+}
+
+
+.card,
+.favorite-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 30%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+

@@ -1,0 +1,160 @@
+/* favorites.css */
+
+body {
+    background-image: url(designbg1.png);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .favorite-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* You can add more styles here as needed */
+  /* favorites.css */
+
+/* ... (existing CSS rules) */
+
+.favorite-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: white; /* Set the background color to white */
+  }
+  
+  /* ... (other CSS rules) */
+  /* styles.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Set the background to transparent */
+    padding: 10px 20px;
+    box-shadow: none; /* Remove the box shadow */
+    position: relative; /* Add relative positioning */
+  }
+  
+  /* Add a big line at the bottom */
+  .navbar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px; /* Adjust the size of the line */
+    background-color: #fff; /* Line color */
+  }
+  
+  .navbar-brand a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggler.active .navbar-toggler-icon {
+    transform: rotate(45deg);
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #622583;
+  }
+  
+  /* Add these styles to your favorites.css file */
+
+.remove-button {
+    background-color: #4169e1; /* Blue background color */
+    color: white; /* White text color */
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    padding: 10px 20px; /* Increase padding for larger button size */
+    font-size: 16px; /* Increase font size */
+  }
+  
+  .remove-button:hover {
+    background: linear-gradient(90deg, #4169e1, #800080); /* Blue to purple gradient */
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow on hover */
+  }
+  
