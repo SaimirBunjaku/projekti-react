@@ -157,4 +157,7 @@ body {
     transform: scale(1.1); /* Scale up on hover */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow on hover */
   }
+  .navbar-brand a{
+    font-size: 60px;
+  }
   

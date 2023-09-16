@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const LoginForm = ({ onLogin }) => {
@@ -6,12 +5,14 @@ const LoginForm = ({ onLogin }) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // me kshyr a pershtatet username pw prej local storage
-    const storedUsername = localStorage.getItem('username');
-    const storedPassword = localStorage.getItem('password');
+    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
 
-    if (username === storedUsername && password === storedPassword) {
-      onLogin(); //nese osht match vazhdo perndryshe mesazhi ose porosia
+    const user = storedUsers.find((u) => u.username === username && u.password === password);
+
+    if (user) {
+      localStorage.setItem('isLoggedIn', 'true');
+      localStorage.setItem('loggedInUser', user.username);
+      onLogin();
     } else {
       alert('Invalid credentials');
     }
@@ -56,6 +57,7 @@ const LoginForm = ({ onLogin }) => {
             >
               Login
             </button>
+            
           </form>
         </div>
       </div>

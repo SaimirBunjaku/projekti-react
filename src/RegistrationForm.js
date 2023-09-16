@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const RegistrationForm = () => {
@@ -7,23 +6,27 @@ const RegistrationForm = () => {
   const [password, setPassword] = useState('');
 
   const handleRegistration = () => {
-    // duhet mi mush krejt fields 
     if (!name || !username || !password) {
       alert('Please fill in all fields');
       return;
     }
 
-    // per name username pw, mu rujt secila nveti nlocal storage
-    localStorage.setItem('name', name);
-    localStorage.setItem('username', username);
-    localStorage.setItem('password', password);
+    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
 
-    // kur ta kryn mu fshi qka ka shkru
+    if (storedUsers.some((user) => user.username === username)) {
+      alert('Username is already taken');
+      return;
+    }
+
+    const newUser = { name, username, password };
+    storedUsers.push(newUser);
+
+    localStorage.setItem('users', JSON.stringify(storedUsers));
+
     setName('');
     setUsername('');
     setPassword('');
 
-    // tregoji qe e ka kriju llogarine userit
     alert('You have successfully created an account!');
   };
 

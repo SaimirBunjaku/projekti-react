@@ -45,7 +45,7 @@ function Courses() {
     <div className="courses" id="courses">
       <div className="header">
         <h1>Our Courses</h1>
-        <p>Enroll with us</p>
+        <p>Enroll with us, and get mentored by the most eperienced prorgammers!</p>
       </div>
       {displayedUsers.map((user, index) => (
         <div className="card" key={user.id}>
